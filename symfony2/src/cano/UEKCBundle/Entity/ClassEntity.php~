@@ -1,0 +1,279 @@
+<?php
+
+namespace cano\UEKCBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ClassEntity
+ */
+class ClassEntity
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     */
+    private $date;
+
+    /**
+     * @var \DateTime
+     */
+    private $startTime;
+
+    /**
+     * @var \DateTime
+     */
+    private $endTime;
+
+    /**
+     * @var integer
+     */
+    private $subject;
+
+    /**
+     * @var integer
+     */
+    private $typeId;
+
+    /**
+     * @var integer
+     */
+    private $classroomId;
+
+    /**
+     * @var integer
+     */
+    private $groupId;
+
+    /**
+     * @var integer
+     */
+    private $teacherId;
+
+    /**
+     * @var integer
+     */
+    private $flags;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set date
+     *
+     * @param \DateTime $date
+     * @return ClassEntity
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date
+     *
+     * @return \DateTime 
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * Set startTime
+     *
+     * @param \DateTime $startTime
+     * @return ClassEntity
+     */
+    public function setStartTime($startTime)
+    {
+        $this->startTime = $startTime;
+
+        return $this;
+    }
+
+    /**
+     * Get startTime
+     *
+     * @return \DateTime 
+     */
+    public function getStartTime()
+    {
+        return $this->startTime;
+    }
+
+    /**
+     * Set endTime
+     *
+     * @param \DateTime $endTime
+     * @return ClassEntity
+     */
+    public function setEndTime($endTime)
+    {
+        $this->endTime = $endTime;
+
+        return $this;
+    }
+
+    /**
+     * Get endTime
+     *
+     * @return \DateTime 
+     */
+    public function getEndTime()
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * Set subject
+     *
+     * @param integer $subject
+     * @return ClassEntity
+     */
+    public function setSubject($subject)
+    {
+        $this->subject = $subject;
+
+        return $this;
+    }
+
+    /**
+     * Get subject
+     *
+     * @return integer 
+     */
+    public function getSubject()
+    {
+        return $this->subject;
+    }
+
+    /**
+     * Set typeId
+     *
+     * @param integer $typeId
+     * @return ClassEntity
+     */
+    public function setTypeId($typeId)
+    {
+        $this->typeId = $typeId;
+
+        return $this;
+    }
+
+    /**
+     * Get typeId
+     *
+     * @return integer 
+     */
+    public function getTypeId()
+    {
+        return $this->typeId;
+    }
+
+    /**
+     * Set classroomId
+     *
+     * @param integer $classroomId
+     * @return ClassEntity
+     */
+    public function setClassroomId($classroomId)
+    {
+        $this->classroomId = $classroomId;
+
+        return $this;
+    }
+
+    /**
+     * Get classroomId
+     *
+     * @return integer 
+     */
+    public function getClassroomId()
+    {
+        return $this->classroomId;
+    }
+
+    /**
+     * Set groupId
+     *
+     * @param integer $groupId
+     * @return ClassEntity
+     */
+    public function setGroupId($groupId)
+    {
+        $this->groupId = $groupId;
+
+        return $this;
+    }
+
+    /**
+     * Get groupId
+     *
+     * @return integer 
+     */
+    public function getGroupId()
+    {
+        return $this->groupId;
+    }
+
+    /**
+     * Set teacherId
+     *
+     * @param integer $teacherId
+     * @return ClassEntity
+     */
+    public function setTeacherId($teacherId)
+    {
+        $this->teacherId = $teacherId;
+
+        return $this;
+    }
+
+    /**
+     * Get teacherId
+     *
+     * @return integer 
+     */
+    public function getTeacherId()
+    {
+        return $this->teacherId;
+    }
+
+    /**
+     * Set flags
+     *
+     * @param integer $flags
+     * @return ClassEntity
+     */
+    public function setFlags($flags)
+    {
+        $this->flags = $flags;
+
+        return $this;
+    }
+
+    /**
+     * Get flags
+     *
+     * @return integer 
+     */
+    public function getFlags()
+    {
+        return $this->flags;
+    }
+}

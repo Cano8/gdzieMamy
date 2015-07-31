@@ -1,0 +1,47 @@
+.timetableContainer 
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 1000px
+    height: 600px
+    font-size: 20px
+    justify-content: flex-start
+
+.timetableContainer .dates 
+    display: flex
+    flex-direction: row
+    background-color: #C3ECC6
+
+.timetableContainer .daysOfTheWeek 
+    display: flex
+    flex-direction: row
+    background-color: #D6D6D6
+
+.timetableContainer
+    .timetableBody 
+        display: flex
+        flex-direction: row
+        background-color: white
+        flex-grow: 1
+
+.timetableContainer > div > div:not(.classMarker) 
+    width: 12.5%
+
+.classMarker 
+    background-color: rgba(255, 000, 0, 0.5)
+    position: absolute
+    top: 56px
+    left: 125px
+    width:125px
+    height: 39px
+    transition: all 0.5s ease
+    font-size: 12px
+
+.timetableColumn 
+    display: flex
+    flex-direction: column
+
+.timetableCell 
+    flex-grow: 1
+    border: 1px solid #DFDFDF
+    background: white

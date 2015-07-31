@@ -1,0 +1,22 @@
+{% extends "canoUEKCBundle::base.html.twig" %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% javascripts '@canoUEKCBundle/Resources/public/js/specific/blur.js' %}
+    <script type="text/javascript" src="{{ asset_url }}" defer></script>
+    {% endjavascripts %}
+
+{%  endblock %}
+
+{% block title %}Gdzie mamy?{% endblock %}
+
+{% block body %}
+    <div id="indexBox" class="box700">
+        <img class="blurImage" src="/images/bg-blurred.jpg">
+        <div class="content">
+            <h1>Gdzie mamy?</h1>
+            <input type="text" class="tt-query searchInput" placeholder="Podaj grupę lub prowadzącego">
+        </div>
+    </div>
+{% endblock %}

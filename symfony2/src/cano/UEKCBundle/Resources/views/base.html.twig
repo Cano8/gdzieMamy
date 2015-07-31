@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Title{% endblock %}</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,500,300' rel='stylesheet' type='text/css'>
+
+        {% block stylesheets %}
+            {% stylesheets '@canoUEKCBundle/Resources/public/css/*' filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% javascripts '@canoUEKCBundle/Resources/public/js/jquery.js'
+                '@canoUEKCBundle/Resources/public/js/typeahead.js'
+                '@canoUEKCBundle/Resources/public/js/myScripts/*'
+            %}
+                <script type="text/javascript" src="{{ asset_url }}" defer></script>
+            {% endjavascripts %}
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+
+    <body>
+        <div class="container">
+            {% block navigation %}
+                {% include '@canoUEKCBundle/Resources/views/navigation.html.twig' %}
+            {% endblock %}
+            {% block body %}{% endblock %}
+    </div>
+    </body>
+
+</html>

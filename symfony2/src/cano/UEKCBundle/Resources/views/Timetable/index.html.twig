@@ -1,0 +1,20 @@
+{% extends "canoUEKCBundle::base.html.twig" %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% javascripts '@canoUEKCBundle/Resources/public/js/specific/timetable.js' %}
+        <script type="text/javascript" src="{{ asset_url }}" defer></script>
+    {% endjavascripts %}
+
+{%  endblock %}
+
+    {%  block body %}
+        <div id="indexBox" class="box1200">
+            <img class="blurImage" src="/images/bg-blurred.jpg">
+            <div class="content">
+                {% include '@canoUEKCBundle/Resources/views/Timetable/timetable.html.twig' %}
+            </div>
+        </div>
+
+{%  endblock %}

@@ -1,0 +1,35 @@
+.twitter-typeahead
+    position: relative
+    width: 100%
+
+.tt-query, .tt-hint 
+    border: 2px solid #ccc
+    border-radius: 0px
+    outline: none
+    font-size: 40px
+
+.tt-query 
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075)
+    margin: 0 !important
+
+    +placeholder
+        color: desaturate(lighten($action-color, 66%), 50%)
+
+.tt-hint 
+    color: desaturate(lighten($action-color, 66%), 50%)
+
+.tt-menu 
+    width: 100%
+    margin: 0
+    padding: 8px 20px
+    background-color: rgba(255, 255, 255, 0.33)
+    color: white
+
+.tt-suggestion 
+    padding: 3px 0px
+    line-height: 24px
+
+.tt-suggestion:hover 
+    color: #fff
+    background-color: rgba(desaturate($action-color, 66%), 0.66)
+    cursor: pointer
